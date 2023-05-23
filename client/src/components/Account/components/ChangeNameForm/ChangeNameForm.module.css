@@ -1,0 +1,42 @@
+.nameImgClose {
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  border-radius: 35px;
+  border: 2px solid var(--yellow);
+  box-shadow: 0px 5px 10px white;
+  cursor: pointer;
+  font-family: 'Luxurious Roman', cursive;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+  transition-duration: .1s;
+}
+
+.links:hover {
+  box-shadow: 0px 9px 14px white;
+}
+
+.links:active {
+  box-shadow: 0px 3px 7px white;
+}
+
+.nameCases {
+  cursor: auto;
+  box-shadow: none;
+  outline: none;
+}
+
+.caseButt {
+  width: 40%;
+}

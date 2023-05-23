@@ -1,0 +1,5 @@
+export const BACK_SVG = 'https://raw.githubusercontent.com/AntonSheluho/midi-keyBoard-react.ts/main/src/png/backSVG.svg' 
+export const EYE_DISABLE = 'https://raw.githubusercontent.com/AntonSheluho/midi-keyBoard-react.ts/main/src/png/eye-disible.svg' 
+export const EYE_ENABLE = 'https://raw.githubusercontent.com/AntonSheluho/midi-keyBoard-react.ts/main/src/png/eye-visible.svg'
+export const CROSS = 'https://raw.githubusercontent.com/AntonSheluho/midi-keyBoard-react.ts/main/src/png/x_cross_delete_remove_icon_144023.svg'
+export const CLOSE_SVG = 'https://raw.githubusercontent.com/AntonSheluho/midi-keyBoard-react.ts/main/src/png/closeSVG.svg'

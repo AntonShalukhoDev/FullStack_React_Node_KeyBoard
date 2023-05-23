@@ -1,0 +1,80 @@
+.root3 {
+  display: block;
+  position: fixed;
+  top: calc((100vh - 50vh) - 145px);
+  left: calc((100vw - 50vw) - 189px);
+  z-index: 11;
+}
+
+.entranceWrapperReg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  background-color: rgb(207, 207, 207);
+  border-radius: 10px;
+}
+
+.entranceForm {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  width: 100%;
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1300px) {
+  .root3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100vw;
+  }
+
+  .entranceWrapperReg {
+    height: auto;
+    width: 610px;
+    padding: 20px 0;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+  .root3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 100vw;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) and (max-width: 650px) {
+  .root3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    width: 100vw;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+  .root3 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    width: 100vw;
+  }
+}

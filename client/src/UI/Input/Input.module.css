@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.formFactor {
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #ff9800;
+  outline: none;
+  padding-left: 15px;
+}
+
+.icon {
+  width: 23px;
+  position: absolute;
+  top: calc((100% - 50%) - 11.5px);
+  right: 70px;
+  cursor: pointer;
+}

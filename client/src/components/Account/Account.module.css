@@ -1,0 +1,124 @@
+.root {
+  grid-area: personal;
+}
+
+.wrapper {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 120px;
+  height: 120px;
+}
+
+.usersIcon {
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+.linksWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 126px;
+  left: 152px;
+  z-index: 2;
+  background-color: darkgray;
+  border-radius: 10px;
+  transition-duration: .5s;
+}
+
+.linksWrapActive {
+  left: -130px;
+}
+
+.openMark {
+  position: absolute;
+  top: 22px;
+  left: -47px;
+  width: 40x;
+  height: 40px;
+  border-radius: 35px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: darkgray;
+  transition-duration: .2s;
+}
+
+.openMark:hover {
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  top: 20px;
+  left: -45x;
+}
+
+.openMark:active {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  top: 22px;
+  left: -47px;
+}
+
+.imgMark {
+  width: 100%;
+  height: 100%;
+}
+
+.imgMarkActive {
+   transform: rotate(180deg);
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+  .wrapper {
+    width: 80px;
+    height: 80px;
+    right: calc((100vw - 93vw) - 40px);
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .linksWrap {
+    height: 250px;
+    left: calc((100vw - 88.1vw));
+  }
+
+  .linksWrapActive {
+    left: calc((100vw - 118vw));
+  }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+  .wrapper {
+    top: calc((100vh - 80vh) - 40px);
+    width: 80px;
+    height: 80px;
+    right: calc((100vw - 93vw) - 40px);
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .linksWrap {
+    top: calc((100vh - 45vh) - 125px);
+    height: 250px;
+    left: calc((100vw - 88.1vw));
+  }
+
+  .linksWrapActive {
+    left: calc((100vw - 118vw));
+    top: calc((100vh - 45vh) - 125px);
+  }
+}

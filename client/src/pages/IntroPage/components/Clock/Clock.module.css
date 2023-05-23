@@ -1,0 +1,41 @@
+.clock {
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  font-size: 36px;
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1300px) {
+  .clock {
+    padding-left: 15px;
+    font-size: 10vh;
+    width: 80%;
+    height: 10vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+  .clock {
+    padding-left: 15px;
+    font-size: 10vh;
+    width: 80%;
+    height: 10vh;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) and (max-width: 650px) {
+  .clock {
+    padding-left: 15px;
+    font-size: 5vh;
+    width: 80%;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+  .clock {
+    padding-left: 15px;
+    font-size: 5vh;
+    width: 80%;
+  }
+}

@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+.root {
+  overflow-x: hidden;
+}
+
+
+:root {
+  --yellow: #ff9800;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+input[type=password]::-ms-reveal {
+   display: none;
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.noValid {
+  border: 2px solid red;
+}
+
+.entranceWrapper {
+  width: 376px;
+  height: 288px;
+}
+
+.backEntranceMark {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.entranceButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.butt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 60%;
+  height: 45px;
+  font-weight: bold;
+  color: #585858;
+  cursor: pointer;
+  background-color: #ff9800;
+  box-shadow: 0px 10px 13px #795548bf;
+  transition-duration: .1s;
+}
+
+.butt:hover {
+  box-shadow: 4px 14px 17px #795548bf;
+}
+
+.butt:active {
+  box-shadow: 4px 8px 11px #795548bf;
+}
+
+.errorEntranceText {
+  color: rgb(207, 207, 207);
+}
+
+.errorActive {
+  color: red;
+  cursor: context-menu;
+}
+
+.root5 {
+  grid-area: personal;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 40px;
+  background-color: white;
+  border-radius: 35px;
+  border: 2px solid var(--yellow);
+  box-shadow: 0px 5px 10px white;
+  cursor: pointer;
+  font-family: 'Luxurious Roman', cursive;
+  font-weight: bold;
+  color: rgb(104, 104, 104);
+  transition-duration: .1s;
+}
+
+.links:hover {
+  box-shadow: 0px 9px 14px white;
+}
+
+.links:active {
+  box-shadow: 0px 3px 7px white;
+}
+
+.link1 {
+  font-size: 1rem;
+}
+
+.link1Act {
+  box-shadow: none;
+  background-color: rgb(131 130 130);
+  border: none;
+}
+
+.link1Act:hover {
+  box-shadow: none;
+}
+
+.icon {
+  width: 110px;
+  height: 110px;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+
+.icon:hover {
+  box-shadow: 0px 0px 5px 5px var(--yellow);
+}
+
+.wrapName {
+  top: 0px;
+  left: 300px;
+  justify-content: center;
+}
+
+.nameImgClose {
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.wrapNameActive {
+  left: 0px;
+}
+
+.nameCases {
+  cursor: auto;
+  box-shadow: none;
+  outline: none;
+}
+
+.nameCases:hover {
+  box-shadow: none;
+}
+.nameCases:active {
+  box-shadow: none;
+}
+
+.textErr {
+  color:red;
+  opacity: 0;
+  transition-duration: .1s;
+}
+
+.caseButt {
+  width: 40%;
+}
+
+.root4 {
+  margin: auto;
+  display: flex;
+  background: url(./assets/static/png5.jpg);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 70px;
+}
+
+.buttonExit {
+  grid-area: exit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 80px;
+  height: 30px;
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #c5c5c5;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+.buttonExit:hover {
+  box-shadow: 0px 0px 5px 5px var(--yellow);
+}
+
+.buttonExit:active {
+  box-shadow: 0px 0px 2px 2px var(--yellow);
+  transition-duration: .1s;
+}
+
+.bodyShadow {
+  grid-area: exit, note, personal, empty, piano, empty;
+  background-color: rgb(0 0 0 / 68%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.note {
+  grid-area: note;
+  width: 65%;
+  height: 35%;
+  background-color: #c5c5c5;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 28px; 
+  padding: 20px;
+  align-self: center;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.songNames {
+  margin-left: 200px;
+}
+
+.song {
+  height: 20px;
+  font-size: 24px; 
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  color: #0057a3;
+  cursor: pointer; 
+  margin: 29px;
+  transition-duration: .2s;
+}
+
+.song:hover {
+  font-size: 26px;
+}
+
+.iconsWrapperActive2 {
+  left: calc(-30vw - 411px);
+}
+
+body {
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+}
+
+.root1 {
+  display: block;
+}
+
+.picture {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  background: url(./assets/static/png3.jpg);
+}
+
+.pictureContent {
+  color: yellow;
+  font-size: 44px;
+  z-index: 2;
+  position: absolute;
+  left: -45%;
+  transition-duration: 2s;
+}
+
+.message {
+  position: fixed;
+  top: calc((100vh - 50vh) - 98px);
+  left: calc((100vw - 50vw) - 280px);
+  color: yellow;
+  font-size: 33px;
+  background-color: grey;
+  width: 561px;
+  height: 196px;
+  z-index: 11;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.pictureShadow {
+  background-color: rgb(0 0 0 / 68%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  position: relative;
+}
+
+.button {
+  background-color: #795548bf;
+  width: 190px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+  border-radius: 35px;
+  cursor: pointer;
+  transition-duration: .2s;
+  position: absolute;
+  top: 0px;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 13px #795548bf; top: -5px;;
+}
+
+.button:active {
+  box-shadow: 0px 5px 8px #795548bf; top: 0px;
+}
+
+.buttonLogIn {
+  left: 360px;
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1300px) {
+
+  .buttonRegistration {
+    margin-top: 20px;
+  }
+
+  .entranceWrapper {
+    width: 300px;
+    height: 250px;
+    align-self: center;
+  }
+
+  .picture {
+    background: url(./assets/static/png3.jpg) repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .message {
+    top: calc((100vh - 50vh) - 94px);
+    left: calc((100vw - 50vw) - 225px);
+    width: 450px;
+    height: 188px;
+    font-size: 26px;
+  }
+
+  .button {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+
+  .buttonRegistration {
+    margin-top: 20px;
+  }
+
+  .entranceWrapper {
+    width: 300px;
+    height: 250px;
+    align-self: center;
+  }
+
+  .linksWrap {
+    height: 250px;
+    left: calc((100vw - 88.1vw));
+  }
+
+  .linksWrapActive {
+    left: calc((100vw - 118vw));
+  }
+
+  .wrapName {
+    top: 0px;
+    left: calc(0vw + 251px);
+
+  }
+
+  .iconsWrapper {
+    left: calc((100vw - 50vw) - 316px);
+    width: 632px;
+    height: 266px;
+  }
+
+  .wrapNameActive {
+    left: 0px;
+    top: 0px;
+  }
+
+  .icon {
+    padding: 0px;
+  }
+
+  .root4 {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .songNames {
+    margin-left: calc((100vw - 80vw) - 90px);
+  }
+
+  .title {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .song {
+    font-size: 16px;
+    margin: 0px 5px;
+  }
+
+  .buttonExit {
+    left: calc((100vw - 92vw) - 40px);
+    top: calc((100vh - 90vh) - 15px);
+  }
+
+  .picture {
+    background: url(./assets/static/png3.jpg) repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .message {
+    font-size: 19px;
+  }
+
+  .button {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) and (max-width: 650px) {
+
+  .entranceWrapper {
+    width: 300px;
+    align-self: center;
+  }
+
+  .picture {
+    background: url(./assets/static/png3.jpg) repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  } 
+
+  .message {
+    top: calc((100vh - 50vh) - 85px);
+    left: calc((100vw - 50vw) - 175px);
+    width: 350px;
+    height: 170px;
+    font-size: 26px;
+  }
+
+  .button {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+
+  .entranceWrapper {
+    width: 300px;
+    align-self: center;
+  }
+
+  .wrapName {
+    top: 0px;
+    left: calc(0vw + 251px);
+
+  }
+
+  .iconsWrapper {
+    left: calc((100vw - 50vw) - 316px);
+    top: 0px;
+    width: 632px;
+    height: 266px;
+  }
+
+  .wrapNameActive {
+    left: 0px;
+    top: 0px;
+  }
+
+  .icon {
+    padding: 0px;
+  }
+
+  .root4 {
+    transform: rotate(90deg);
+    top: 58.1vw;
+    left: 0px;
+    width: 100vh;
+    height: 100vw;
+    row-gap: 10px;
+  }
+
+  .songNames {
+    margin-left: calc((100vw - 80vw) - 90px);
+  }
+
+  .title {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .song {
+    font-size: 16px;
+    margin: 0px 5px;
+  }
+
+  .buttonExit {
+    left: calc((100vw - 92vw) - 40px);
+    top: calc((100vh - 90vh) - 15px);
+  }
+
+  .picture {
+      background: url(./assets/static/png3.jpg) repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+  } 
+
+  .message {
+      top: calc((100vh - 50vh) - 85px);
+      left: calc((100vw - 50vw) - 155px);
+      width: 310px;
+      height: 170px;
+      font-size: 19px;
+  }
+
+  .button {
+      position: relative;
+      top: 0px;
+      left: 0px;
+  }
+}

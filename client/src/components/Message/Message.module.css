@@ -1,0 +1,21 @@
+.wrapper {
+  position: fixed;
+  top: calc((100vh - 50vh) - 98px);
+  left: calc((100vw - 50vw) - 280px);
+  color: yellow;
+  font-size: 33px;
+  background-color: grey;
+  width: 561px;
+  height: 196px;
+  z-index: 11;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.isActive {
+  opacity: 1;
+}

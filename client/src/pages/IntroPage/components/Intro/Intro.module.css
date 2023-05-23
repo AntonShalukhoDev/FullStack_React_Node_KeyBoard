@@ -1,0 +1,138 @@
+.wrapper {
+  background: url("../../../../assets/static/png3.jpg") repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+}
+
+.content {
+  color: yellow;
+  font-size: 44px;
+  z-index: 2;
+  transition-duration: 2s;
+}
+
+.firstTitle {
+  top: 10%; 
+  left: calc((100vw - 50vw) - 594px);
+}
+
+.secondTitle {
+  top: 10%; 
+  left: calc((100vw - 50vw) - 496px);
+}
+
+.thirdTitle { 
+  top: 0%; 
+  left: calc((100vw - 50vw) - 275px);
+}
+
+.buttonWrapper {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  height: 169px;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: #795548bf;
+  width: 190px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+  border-radius: 35px;
+  cursor: pointer;
+  transition-duration: .2s;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0px 10px 13px #795548bf; top: -5px;;
+}
+
+.button:active {
+  box-shadow: 0px 5px 8px #795548bf; top: 0px;
+}
+
+@media (orientation: landscape) and (min-width: 800px) and (max-width: 1300px) {
+  .content {
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 28px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    width: 229px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 650px) and (max-width: 900px) {
+  .content {
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 28px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    width: 229px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 130px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 480px) and (max-width: 650px) {
+  .content {
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 28px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    width: 229px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 169px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 320px) and (max-width: 475px) {
+  .content {
+    text-align: center;
+    padding: 0px 15px;
+    font-size: 28px;
+  }
+
+  .buttonWrapper {
+    display: flex;
+    width: 229px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    align-items: center;
+    height: 169px;
+  }
+}
